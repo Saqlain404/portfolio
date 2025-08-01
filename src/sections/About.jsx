@@ -19,10 +19,11 @@ const About = () => {
           <div className="z-10">
             <p className="headtext">Hi, I'm Saqlain Malik</p>
             <p className="subtext">
-              Over the last 2 years, I developed my frontend dev
-              skills to deliver dynamic web applications and software. My expertise lies in creating engaging, responsive interfaces  
-          through writing clean and optimized code and utilizing cutting-edge
-          development tools and techniques.
+              Over the last 2 years, I developed my frontend dev skills to
+              deliver dynamic web applications and software. My expertise lies
+              in creating engaging, responsive interfaces through writing clean
+              and optimized code and utilizing cutting-edge development tools
+              and techniques.
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
@@ -61,7 +62,7 @@ const About = () => {
               text="Next.js"
               containerRef={grid2Container}
             />
-             <Card
+            <Card
               style={{ rotate: "48deg", top: "10%", left: "72%" }}
               text="Tailwind CSS"
               containerRef={grid2Container}
@@ -114,7 +115,7 @@ const About = () => {
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
-            <Frameworks />
+            <Frameworks/>
           </div>
         </div>
       </div>
