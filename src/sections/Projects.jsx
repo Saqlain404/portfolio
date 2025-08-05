@@ -12,6 +12,9 @@ const Projects = () => {
     y.set(e.clientY + 20);
   };
   const [preview, setPreview] = useState(null);
+  // Detect if the device is mobile
+  const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
+
   return (
     <section
       onMouseMove={handleMouseMove}
@@ -22,7 +25,7 @@ const Projects = () => {
       {myProjects.map((project) => (
         <Project key={project.id} {...project} setPreview={setPreview} />
       ))}
-      {preview && (
+      {!isMobile && preview && (
         <motion.img
           className="fixed top-0 left-0 z-50  h-44 rounded-lg shadow-lg pointer-events-none w-auto"
           src={preview}

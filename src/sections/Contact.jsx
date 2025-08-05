@@ -31,19 +31,20 @@ const Contact = () => {
       console.log("From submitted:", formData);
       await emailjs.send(
         "service_v7soe0c",
-        "template_4mnmg0u",
+        "template_nv42gbe",
         {
           from_name: formData.name,
           to_name: "Saqlain",
           from_email: formData.email,
           to_email: "saqlainmalik73@gmail.com",
+          subject: formData.subject,
           message: formData.message,
         },
         "lrv10dzodayYJZplp"
       );
       setIsLoading(false);
-      setFormData({ name: "", email: "", message: "" });
-      showAlertMessage("success", "You message has been sent!");
+      setFormData({ name: "", email: "", subject: "" , message: "" });
+      showAlertMessage("success", "Your message has been sent!");
     } catch (error) {
       setIsLoading(false);
       console.log(error);
@@ -97,6 +98,22 @@ const Contact = () => {
               placeholder="JohnDoe@email.com"
               autoComplete="email"
               value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+           <div className="mb-5">
+            <label htmlFor="subject" className="feild-label">
+              Subject
+            </label>
+            <input
+              id="subject"
+              name="subject"
+              type="text"
+              className="field-input field-input-focus"
+              placeholder="Enter subject"
+              autoComplete="subject"
+              value={formData.subject}
               onChange={handleChange}
               required
             />
