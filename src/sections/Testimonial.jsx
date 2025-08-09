@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import { twMerge } from "tailwind-merge";
 import Marquee from "../components/Marquee";
-import { reviews } from "../constants";
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
+import { testimonials } from "../constants";
+const firstRow = testimonials.slice(0, testimonials.length / 2);
+const secondRow = testimonials.slice(testimonials.length / 2);
 
-const ReviewCard = ({ img, name, username, body }) => {
+const ReviewCard = ({ img, name, username, project, body }) => {
   return (
     <figure
       className={twMerge(
@@ -26,7 +27,8 @@ const ReviewCard = ({ img, name, username, body }) => {
           <p className="text-xs font-medium text-white/40">{username}</p>
         </div>
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
+      <blockquote className="mt-2 text-xs font-medium text-white/60">{project}</blockquote>
+      <blockquote className="mt-2 text-sm font-extralight">{body}</blockquote>
     </figure>
   );
 };

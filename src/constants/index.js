@@ -72,43 +72,43 @@ export const myProjects = [
       },
     ],
   },
-  // {
-  //   id: 3,
-  //   title: "Blazor Web App",
-  //   description:
-  //     "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
-  //   subDescription: [
-  //     "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-  //     "Implemented API interactions using .NET Core for a robust backend.",
-  //     "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-  //     "Integrated SQLite for efficient client-side database storage.",
-  //   ],
-  //   href: "",
-  //   logo: "",
-  //   image: "/assets/projects/blazor-app.jpg",
-  //   tags: [
-  //     {
-  //       id: 1,
-  //       name: "Blazor",
-  //       path: "/assets/logos/blazor.svg",
-  //     },
-  //     {
-  //       id: 2,
-  //       name: ".NET Core",
-  //       path: "/assets/logos/dotnetcore.svg",
-  //     },
-  //     {
-  //       id: 3,
-  //       name: "SQLite",
-  //       path: "/assets/logos/sqlite.svg",
-  //     },
-  //     {
-  //       id: 4,
-  //       name: "TailwindCSS",
-  //       path: "/assets/logos/tailwindcss.svg",
-  //     },
-  //   ],
-  // },
+  {
+    id: 3,
+    title: "MYOT - Make Your Own Template",
+    description:
+      "MYOT is a proposed SaaS solution that allows organizations to create, manage, and collaborate on standardized document templates. It aims to streamline document creation processes, ensuring consistency and efficiency across various departments.",
+    subDescription: [
+      "Developed a fully interactive Single Page Application (SPA) using React.js.",
+      "Implemented API interactions using Node.js for a robust backend.",
+      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
+      "Integrated MongoDB for efficient data storage and retrieval.",
+    ],
+    href: "https://myot-static.vercel.app/",
+    logo: "",
+    image: "/assets/projects/myot.png",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "Node.js",
+        path: "/assets/logos/nodejs.svg",
+      },
+      {
+        id: 3,
+        name: "MongoDB",
+        path: "/assets/logos/mongodb.svg",
+      },
+      {
+        id: 4,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+    ],
+  },
   {
     id: 4,
     title: "To-Do App – Task Management Made Simple",
@@ -148,33 +148,33 @@ export const myProjects = [
   },
   {
     id: 5,
-    title: "WordPress Custom Theme",
+    title: "Learner's Vault - A Coaching Institute Website",
     description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
+      "A website for a coaching institute that provides information about courses, faculty, and resources for students. The site is designed to be user-friendly and informative, helping students navigate their educational journey.",
     subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
+      "Developed a responsive website using React.js, TypeScript, and Vite.",
       "Integrated Tailwind CSS for modern styling and UI enhancements.",
       "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
+      
     ],
-    href: "",
+    href: "https://learners-vault-p1zm.vercel.app/",
     logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
+    image: "/assets/projects/learners-vault.png",
     tags: [
       {
         id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
+        name: "React",
+        path: "/assets/logos/react.svg",
       },
       {
         id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
+        name: "TypeScript",
+        path: "/assets/logos/typescript.svg",
       },
       {
         id: 3,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
       },
       {
         id: 4,
@@ -185,33 +185,33 @@ export const myProjects = [
   },
   {
     id: 6,
-    title: "Online Learning Platform",
+    title: "LiveSphere: The Future of Networking",
     description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
+      "The platform bridges the gap between personal and professional connections that were once difficult to establish..",
     subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
+      "Built using Next.js for server-side rendering and static site generation.",
+      "Implemented dynamic routing for seamless navigation between user profiles and networking events.",
+      "Integrated real-time chat functionality using WebSockets for instant communication.",
+      "Integrated Auth0 for secure user authentication and authorization.",
     ],
-    href: "",
+    href: "https://livesphere.vercel.app",
     logo: "",
-    image: "/assets/projects/elearning.jpg",
+    image: "/assets/projects/livesphere.png",
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        name: "Next.js",
+        path: "/assets/logos/nextjs.svg",
       },
       {
         id: 2,
-        name: "Azure",
-        path: "/assets/logos/azure.svg",
+        name: "TypeScript",
+        path: "/assets/logos/typescript.svg",
       },
       {
         id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
+        name: "Auth0",
+        path: "/assets/logos/auth0.svg",
       },
       {
         id: 4,
@@ -237,6 +237,11 @@ export const mySocials = [
     name: "Instagram",
     href: "https://www.instagram.com/sahil_malik_._/",
     icon: "/assets/socials/instagram.svg",
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/Saqlain404",
+    icon: "/assets/socials/github.svg",
   },
 ];
 
@@ -362,3 +367,102 @@ export const reviews = [
     img: "https://robohash.org/eve",
   },
 ];
+
+export const testimonials = [
+  // NXAI
+  {
+    name: "Lachlan Bode",
+    username: "@lachlanbode",
+    project: "NXAI – AI Powered Automation Platform",
+    body: "NXAI has revolutionized our operations. The AI agent workflows are seamless.",
+    img: "https://robohash.org/dave",
+  },
+  {
+    name: "Jake Smith",
+    username: "@jakesmith",
+    project: "NXAI – AI Powered Automation Platform",
+    body: "The platform is lightning fast and beautifully designed. The collaboration with our backend team was flawless.",
+    img: "https://robohash.org/eve",
+  },
+
+  // BanoIAS
+  {
+    name: "Dev Singh",
+    username: "@devsingh",
+    project: "BanoIAS - Institute For Civil Service Exam Preparation",
+    body: "The website reflects our institute’s values perfectly. The user interface is intuitive and easy to navigate.",
+    img: "https://robohash.org/charlie",
+  },
+  {
+    name: "Shalini Kapoor",
+    username: "@shalinikapoor",
+    project: "BanoIAS - Institute For Civil Service Exam Preparation",
+    body: "Everything from course pages to the faculty section is intuitive. We’ve seen a significant increase in inquiries since going live.",
+    img: "https://robohash.org/bob",
+  },
+
+  // MYOT
+  {
+    name: "Moussa Leblouba",
+    username: "@moussaleblouba",
+    project: "MYOT - Make Your Own Template",
+    body: "MYOT has made our document creation process 3x faster. The customization options and clean UI are exactly what we needed.",
+    img: "https://robohash.org/alice",
+  },
+  {
+    name: "Yusuf Al-Mansoori",
+    username: "@yusufalmansoori",
+    project: "MYOT - Make Your Own Template",
+    body: "It’s rare to find a tool that is both simple and powerful. Saqlain nailed the balance perfectly.",
+    img: "https://robohash.org/jill",
+  },
+
+  // To-Do App
+  {
+    name: "Vivek Rathi",
+    username: "@vivekrathi",
+    project: "To-Do App – Task Management Made Simple",
+    body: "This app keeps me on track every day. I love how fast it is and how easy it is to mark tasks complete.",
+    img: "https://robohash.org/jack",
+  },
+  {
+    name: "Nisha Verma",
+    username: "@nishav",
+    project: "To-Do App – Task Management Made Simple",
+    body: "Simple, clean, and effective. It’s my go-to for daily task management.",
+    img: "https://robohash.org/nisha",
+  },
+
+  // Learner's Vault
+  {
+    name: "Moaz Siddiqui",
+    username: "@moazsiddiqui",
+    project: "Learner's Vault",
+    body: "The website is beautifully designed and very user-friendly. It has helped us build a strong online presence.",
+    img: "https://robohash.org/harish",
+  },
+  {
+    name: "Waseem Khan",
+    username: "@waseemkhan",
+    project: "Learner's Vault",
+    body: "Beautifully crafted and highly functional. The site has received great feedback from our students.",
+    img: "https://robohash.org/ananya",
+  },
+
+  // LiveSphere
+  {
+    name: "Dr. Michael Rouhana",
+    username: "@michaelrouhana",
+    project: "LiveSphere: The Future of Networking",
+    body: "LiveSphere has transformed how we network. The real-time chat feature is a game changer for our events.",
+    img: "https://robohash.org/mohit",
+  },
+  {
+    name: "Ritika Sen",
+    username: "@ritikas",
+    project: "LiveSphere: The Future of Networking",
+    body: "The platform bridges the gap between personal and professional connections that were once difficult to establish.",
+    img: "https://robohash.org/ritika",
+  },
+];
+

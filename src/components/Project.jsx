@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+/* eslint-disable react/prop-types */
+import { useState } from "react";
 import ProjectDetails from "./ProjectDetails";
 
 const Project = ({
@@ -11,10 +12,12 @@ const Project = ({
   setPreview,
 }) => {
   const [isHidden, setIsHidden] = useState(false);
+  const isMobile  = typeof window !== "undefined" && window.innerWidth <= 768;
   return (
     <>
       <div
         className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0"
+        {...(isMobile ? { onMouseEnter: () => setPreview(null) } : {})}
         onMouseEnter={() => setPreview(image)}
         onMouseLeave={() => setPreview(null)}
       >
