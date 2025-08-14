@@ -220,6 +220,41 @@ export const myProjects = [
       },
     ],
   },
+  {
+    id: 7,
+    title: "GC Stal Warts - Empowering MSMEs Growth and Innovation",
+    description: "Global Conflux Of Stal Warts provide tailored solutions including fundraising, MSME IPO, trade finance, and more to boost business profitability",
+    subDescription: [
+      "Developed a fully responsive website using React.js and Tailwind CSS.",
+      "Implemented dynamic content management features for easy updates.",
+      "Optimized for performance and SEO to enhance visibility and user engagement.",
+    ],
+    href: "https://gcstalwarts.com/",
+    logo: "",
+    image: "/assets/projects/gcstalwarts.png",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "TypeScript",
+        path: "/assets/logos/typescript.svg",
+      },
+      {
+        id: 3,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 4,
+        name: "Vite.js",
+        path: "/assets/logos/vitejs.svg",
+      },
+    ],
+  }
 ];
 
 export const mySocials = [
